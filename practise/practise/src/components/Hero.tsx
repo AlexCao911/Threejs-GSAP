@@ -12,6 +12,8 @@ const Hero = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
+    // TODO: 
+    // More video effect here
 
     }, []);
 
