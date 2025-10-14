@@ -1,5 +1,8 @@
+// The header navigation bar 
+// ~~~~~~~~~~~~~~~
+// With a logo, some navigation tag, and two botton(search and cart)
+// Alex Cou 25/10/14
 
-import React from 'react';
 import { navLinks } from '../constants/index.ts'
 
 const NavBar = () => {
