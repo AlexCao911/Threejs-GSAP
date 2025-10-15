@@ -8,6 +8,13 @@ Source: https://sketchfab.com/3d-models/macbook-pro-m3-16-inch-2024-8e34fc2b3031
 Title: macbook pro M3 16 inch 2024
 */
 
+// index.ts filter the change color parts and those unchangable parts
+// useEffect change the color of those specific part when {color} change
+// Macbook-14 with function of changing color by the button from ProductViewer.tsx
+// same as other from /components/models/
+// ~~~~~~~~~~~
+// Alex Cou 25/10/15
+
 import React, { useEffect } from 'react'
 import { useGLTF, useTexture } from '@react-three/drei'
 import useMacbookStore from '../../store';
