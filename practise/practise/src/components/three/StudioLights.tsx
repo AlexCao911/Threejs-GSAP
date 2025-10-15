@@ -3,6 +3,8 @@
 // ~~~~~~~~~~~~~~~
 // environment resolution, spotlight, ambient light, direct light
 // Alex Cou 25/10/15
+// It's a three js component, not a typical react component 
+
 import { Environment, Lightformer } from "@react-three/drei";
 
 const StudioLights = () => {
