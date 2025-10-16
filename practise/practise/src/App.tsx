@@ -12,6 +12,14 @@ import Footer from './components/Footer'
 
 gsap.registerPlugin(ScrollTrigger, SplitText);;
 
+/**
+ * Top-level application component that composes the main page layout.
+ *
+ * Renders the primary site sections in order: navigation, hero, product viewer,
+ * showcase, performance, features, highlights, and footer.
+ *
+ * @returns The root JSX element containing the assembled main page structure.
+ */
 function App(){
   return (
     <main>
