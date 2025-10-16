@@ -1,8 +1,8 @@
- // Showcase section                                                                     │
- // ~~~~~~~~~~~~~~~                                                                      │
- // A video background with a masked logo that scales on scroll.                         │
-// Features promotional text for the new "Rocket Chip".                                 │
- // Includes performance stats and uses GSAP for scroll-triggered animations.            │
+ // Showcase section                                                                     
+ // ~~~~~~~~~~~~~~~                                                                      
+ // A video background with a masked logo that scales on scroll.                         
+ // Features promotional text for the new "Rocket Chip".                                 
+ // Includes performance stats and uses GSAP for scroll-triggered animations.            
  // Alex Cou 25/10/15 
  
 import { useMediaQuery } from "react-responsive";

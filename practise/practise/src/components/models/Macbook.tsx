@@ -20,7 +20,9 @@ export function MacbookModel(props: React.ComponentProps<'group'>) {
 
   const { color } = useMacbookStore();
   const texture = useTexture('/screen.png')
-
+  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.needsUpdate = true;
+  
   useEffect(() => {
     scene.traverse((child: THREE.Object3D) => {
       if (child instanceof THREE.Mesh) {
