@@ -14,6 +14,14 @@ import useMacbookStore from '../../store';
 import { noChangeParts } from "../../constants";
 import * as THREE from 'three';
 
+/**
+ * Renders a GLTF-based MacBook model with a customizable exterior color and a video-mapped screen.
+ *
+ * The component reads `color` and `texture` from the application store, applies `color` to editable mesh
+ * materials in the loaded scene, and maps the provided video texture onto the laptop screen mesh.
+ *
+ * @returns A JSX <group> containing the assembled MacBook meshes with applied materials and the screen video texture.
+ */
 export function MacbookModel(props: React.ComponentProps<'group'>) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const { nodes, materials, scene } = useGLTF('/models/macbook-transformed.glb') as any
