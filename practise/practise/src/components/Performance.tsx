@@ -44,7 +44,7 @@ const Performance = () => {
 
             // Enhanced heading animation
             gsap.fromTo(
-                "h2",
+                sectionEl.querySelector("h2"),
                 {
                     opacity: 0,
                     y: 50,
@@ -57,7 +57,7 @@ const Performance = () => {
                     duration: 1.5,
                     ease: "power2.out",
                     scrollTrigger: {
-                        trigger: "h2",
+                        trigger: sectionEl.querySelector("h2"),
                         start: "top 90%",
                         end: "top 60%",
                         scrub: 1,
