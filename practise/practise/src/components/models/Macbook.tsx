@@ -9,7 +9,7 @@ Title: macbook pro M3 16 inch 2024
 */
 
 import React, { useEffect } from 'react'
-import { useGLTF, useTexture } from '@react-three/drei'
+import { useGLTF, useVideoTexture } from '@react-three/drei'
 import useMacbookStore from '../../store';
 import { noChangeParts } from "../../constants";
 import * as THREE from 'three';
@@ -18,10 +18,10 @@ export function MacbookModel(props: React.ComponentProps<'group'>) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const { nodes, materials, scene } = useGLTF('/models/macbook-transformed.glb') as any
 
-  const { color } = useMacbookStore();
-  const texture = useTexture('/screen.png')
-  texture.colorSpace = THREE.SRGBColorSpace;
-  texture.needsUpdate = true;
+  const { color, texture,} = useMacbookStore();
+
+
+  const screen = useVideoTexture(texture)
   
   useEffect(() => {
     scene.traverse((child: THREE.Object3D) => {
@@ -60,7 +60,7 @@ export function MacbookModel(props: React.ComponentProps<'group'>) {
       <mesh geometry={nodes.Object_96.geometry} material={materials.PaletteMaterial003} rotation={[Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.Object_107.geometry} material={materials.JvMFZolVCdpPqjj} rotation={[Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.Object_123.geometry} material={materials.sfCQkHOWyrsLmor} rotation={[Math.PI / 2, 0, 0]}>
-        <meshBasicMaterial map={texture} />
+        <meshBasicMaterial map={screen} />
       </mesh>     
        <mesh geometry={nodes.Object_127.geometry} material={materials.ZCDwChwkbBfITSW} rotation={[Math.PI / 2, 0, 0]} />
     </group>
