@@ -55,7 +55,7 @@ const ModelScroll = () => {
             scrollTrigger: {
                 trigger: '#f-canvas',
                 start: 'top top',
-                end: 'bottom  top',
+                end: 'bottom top',
                 scrub: 1,
                 pin: true,
             }

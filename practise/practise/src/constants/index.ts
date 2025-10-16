@@ -28,7 +28,7 @@ const noChangeParts = [
   "Object_10", // Display panel
 ];
 
-// Color hander
+// Color handler
 export const shouldChangePartColor = (
   partName: string,
   materialName?: string
