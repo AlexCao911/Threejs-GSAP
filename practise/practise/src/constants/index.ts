@@ -45,7 +45,13 @@ export const shouldChangePartColor = (partName: string, materialName?: string) =
     return true; // allow color change
 };
 
-const performanceImages = [
+interface PerformanceImage {
+  id: string;
+  src: string;
+  alt?: string;
+}
+
+const performanceImages: PerformanceImage[] = [
     { id: "p1", src: "/performance1.png" },
     { id: "p2", src: "/performance2.png" },
     { id: "p3", src: "/performance3.png" },
@@ -55,41 +61,171 @@ const performanceImages = [
     { id: "p7", src: "/performance7.png" },
 ];
 
-const performanceImgPositions = [
+interface PerformanceImgPosition {
+  id: string;
+  left?: number;
+  right?: number;
+  bottom?: number;
+  top?: number;
+  transform?: string;
+  // 响应式定位支持
+  desktop?: {
+    left?: number;
+    right?: number;
+    bottom?: number;
+    top?: number;
+    transform?: string;
+  };
+  tablet?: {
+    left?: number;
+    right?: number;
+    bottom?: number;
+    top?: number;
+    transform?: string;
+  };
+  mobile?: {
+    left?: number;
+    right?: number;
+    bottom?: number;
+    top?: number;
+    transform?: string;
+  };
+}
+
+// 基于黄金比例 (1.618) 和审美原则的图片布局
+// 使用黄金分割点: 38.2% 和 61.8%
+const performanceImgPositions: PerformanceImgPosition[] = [
     {
-        id: "p1",
-        left: 5,
+        id: "p1", // 左上角 - 黄金分割点
+        left: 8,
+        bottom: 72,
+        transform: "scale(0.9) rotate(-2deg)",
+        desktop: {
+            left: 8,
+            bottom: 72,
+            transform: "scale(1) rotate(-2deg)"
+        },
+        tablet: {
+            left: 12,
+            bottom: 68,
+            transform: "scale(0.85) rotate(-1deg)"
+        },
+        mobile: {
+            left: 15,
+            bottom: 65,
+            transform: "scale(0.7)"
+        }
+    },
+    {
+        id: "p2", // 右侧中上 - 黄金比例位置
+        right: 15,
         bottom: 65,
+        transform: "scale(1.1) rotate(1deg)",
+        desktop: {
+            right: 15,
+            bottom: 65,
+            transform: "scale(1.1) rotate(1deg)"
+        },
+        tablet: {
+            right: 18,
+            bottom: 62,
+            transform: "scale(0.9) rotate(0.5deg)"
+        },
+        mobile: {
+            right: 20,
+            bottom: 58,
+            transform: "scale(0.75)"
+        }
     },
     {
-        id: "p2",
-        right: 10,
-        bottom: 60,
-    },
-    {
-        id: "p3",
-        right: -5,
+        id: "p3", // 右侧中部 - 视觉平衡点
+        right: 5,
         bottom: 45,
+        transform: "scale(0.95) rotate(3deg)",
+        desktop: {
+            right: 5,
+            bottom: 45,
+            transform: "scale(0.95) rotate(3deg)"
+        },
+        tablet: {
+            right: 8,
+            bottom: 42,
+            transform: "scale(0.8) rotate(2deg)"
+        },
+        mobile: {
+            right: 10,
+            bottom: 40,
+            transform: "scale(0.65)"
+        }
     },
     {
-        id: "p4",
-        right: -10,
-        bottom: 0,
+        id: "p4", // 右下角 - 对角平衡
+        right: 12,
+        bottom: 8,
+        transform: "scale(1.05) rotate(-1deg)",
+        desktop: {
+            right: 12,
+            bottom: 8,
+            transform: "scale(1.05) rotate(-1deg)"
+        },
+        tablet: {
+            right: 15,
+            bottom: 12,
+            transform: "scale(0.9) rotate(-0.5deg)"
+        },
+        mobile: {
+            right: 18,
+            bottom: 15,
+            transform: "scale(0.7)"
+        }
     },
     {
-        id: "p5",
-        left: 20,
-        bottom: 50,
+        id: "p5", // 中心偏左 - 焦点位置 (跳过动画)
+        left: 25,
+        bottom: 38,
+        transform: "scale(1) rotate(0deg)"
     },
     {
-        id: "p6",
-        left: 2,
-        bottom: 30,
+        id: "p6", // 左侧中下 - 黄金分割的镜像
+        left: 6,
+        bottom: 28,
+        transform: "scale(0.85) rotate(2deg)",
+        desktop: {
+            left: 6,
+            bottom: 28,
+            transform: "scale(0.85) rotate(2deg)"
+        },
+        tablet: {
+            left: 10,
+            bottom: 32,
+            transform: "scale(0.75) rotate(1deg)"
+        },
+        mobile: {
+            left: 12,
+            bottom: 35,
+            transform: "scale(0.6)"
+        }
     },
     {
-        id: "p7",
-        left: -5,
-        bottom: 0,
+        id: "p7", // 左下角 - 视觉锚点
+        left: 18,
+        bottom: 5,
+        transform: "scale(0.9) rotate(-3deg)",
+        desktop: {
+            left: 18,
+            bottom: 5,
+            transform: "scale(0.9) rotate(-3deg)"
+        },
+        tablet: {
+            left: 22,
+            bottom: 8,
+            transform: "scale(0.8) rotate(-2deg)"
+        },
+        mobile: {
+            left: 25,
+            bottom: 12,
+            transform: "scale(0.65)"
+        }
     },
 ];
 
