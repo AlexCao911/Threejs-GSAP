@@ -206,10 +206,6 @@ Feel free to:
 - Submit pull requests
 - Share your own implementations
 
-## 📄 License
-
-This project is for educational and demonstration purposes.
-
 ## 🌟 Project Highlights
 
 ### 🏆 Technical Achievements
@@ -236,6 +232,7 @@ The project is automatically deployed using GitHub Actions whenever changes are 
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
+
 - Report bugs or suggest features
 - Submit pull requests
 - Improve documentation
@@ -245,12 +242,8 @@ Contributions are welcome! Feel free to:
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
 ---
 
 **Built with ❤️ by Alex Cou**
 
-*Showcasing modern web development with React, TypeScript, Three.js, and GSAP*
+_Showcasing modern web development with React, TypeScript, Three.js, and GSAP_
