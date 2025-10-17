@@ -1,4 +1,11 @@
 
+ // Highlights section                                                                     
+ // ~~~~~~~~~~~~~~~~~~                                                                      
+ // Masonry-style layout showcasing MacBook Pro key features and benefits.                         
+ // Features staggered animations triggered by scroll with responsive design.                                 
+ // Displays performance improvements, display quality, AI capabilities, and battery life.            
+ // Alex Cou 25/10/16
+
 import {useMediaQuery} from "react-responsive";
 import {useGSAP} from "@gsap/react";
 import gsap from "gsap";

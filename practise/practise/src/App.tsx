@@ -1,3 +1,10 @@
+ // Main App Component                                                                     
+ // ~~~~~~~~~~~~~~~~~~                                                                      
+ // Root application component that orchestrates all page sections.                         
+ // Registers GSAP plugins and renders the complete MacBook landing page.                                 
+ // Includes navigation, hero, product viewer, showcase, and feature sections.            
+ // Alex Cou 25/10/14
+
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import ProductViewer from './components/ProductViewer';

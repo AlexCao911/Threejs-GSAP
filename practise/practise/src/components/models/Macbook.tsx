@@ -8,6 +8,13 @@ Source: https://sketchfab.com/3d-models/macbook-pro-m3-16-inch-2024-8e34fc2b3031
 Title: macbook pro M3 16 inch 2024
 */
 
+ // MacBook Model (Features)                                                                     
+ // ~~~~~~~~~~~~~~~~~~~~~~~~                                                                      
+ // 3D model component for the MacBook used in Features section with video textures.                         
+ // Supports dynamic video texture mapping and color changes for interactive demos.                                 
+ // Integrates with Zustand store for texture and color state management.            
+ // Alex Cou 25/10/15 
+
 import React, { useEffect } from 'react'
 import { useGLTF, useVideoTexture } from '@react-three/drei'
 import useMacbookStore from '../../store';

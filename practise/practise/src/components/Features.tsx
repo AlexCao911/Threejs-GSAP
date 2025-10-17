@@ -1,3 +1,10 @@
+// Features section                                                                     
+// ~~~~~~~~~~~~~~~~                                                                      
+// Interactive 3D MacBook showcase with rotating model and feature highlights.                         
+// Synchronizes video textures with scroll-triggered animations using GSAP.                                 
+// Features dynamic content boxes that appear as the model rotates through features.            
+// Alex Cou 25/10/16
+
 import { Canvas } from "@react-three/fiber";
 import StudioLights from "./three/StudioLights";
 import { features, featureSequence } from "../constants/index";
@@ -34,7 +41,7 @@ const ModelScroll = () => {
             });
 
             v.load();
-            
+
             // Store reference to prevent garbage collection
             videoElementsRef.current.push(v);
         });

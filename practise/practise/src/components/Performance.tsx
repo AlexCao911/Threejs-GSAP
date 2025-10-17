@@ -1,3 +1,10 @@
+// Performance section                                                                     
+// ~~~~~~~~~~~~~~~~~~~                                                                      
+// Graphics performance showcase with animated image positioning.                         
+// Features responsive image layouts with GSAP scroll-triggered animations.                                 
+// Demonstrates M4 chip capabilities with dynamic image placement and text reveals.            
+// Alex Cou 25/10/16
+
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";

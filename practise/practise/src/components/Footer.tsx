@@ -1,3 +1,10 @@
+ // Footer section                                                                     
+ // ~~~~~~~~~~~~~~                                                                      
+ // Website footer with company information and legal links.                         
+ // Displays contact info, Apple logo, and dynamically renders footer links.                                 
+ // Uses data from constants for easy maintenance and updates.            
+ // Alex Cou 25/10/17 
+
 import {footerLinks} from "../constants/index.js";
 
 const Footer = () => {

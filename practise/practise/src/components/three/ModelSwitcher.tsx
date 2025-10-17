@@ -1,4 +1,11 @@
 
+ // Model Switcher                                                                     
+ // ~~~~~~~~~~~~~~                                                                      
+ // Handles smooth transitions between 14" and 16" MacBook models.                         
+ // Uses GSAP animations for fade and position transitions with presentation controls.                                 
+ // Manages opacity and positioning of multiple 3D models based on scale selection.            
+ // Alex Cou 25/10/16
+
 import { PresentationControls } from "@react-three/drei";
 import { useRef } from "react";
 import { MacbookModel_16 } from "../models/Macbook-16";
