@@ -17,6 +17,11 @@ import useMacbookStore from "../store/index";
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
 import { Group } from 'three';
+import feature1Video from '/videos/feature-1.mp4';
+import feature2Video from '/videos/feature-2.mp4';
+import feature3Video from '/videos/feature-3.mp4';
+import feature4Video from '/videos/feature-4.mp4';
+import feature5Video from '/videos/feature-5.mp4';
 
 const ModelScroll = () => {
     const groupRef = useRef<Group>(null);
@@ -85,19 +90,19 @@ const ModelScroll = () => {
 
         // Content & Texture Sync
         timeline
-            .call(() => setTexture('/videos/feature-1.mp4'))
+            .call(() => setTexture(feature1Video))
             .to('.box1', { opacity: 1, y: 0, delay: 1 })
 
-            .call(() => setTexture('/videos/feature-2.mp4'))
+            .call(() => setTexture(feature2Video))
             .to('.box2', { opacity: 1, y: 0 })
 
-            .call(() => setTexture('/videos/feature-3.mp4'))
+            .call(() => setTexture(feature3Video))
             .to('.box3', { opacity: 1, y: 0 })
 
-            .call(() => setTexture('/videos/feature-4.mp4'))
+            .call(() => setTexture(feature4Video))
             .to('.box4', { opacity: 1, y: 0 })
 
-            .call(() => setTexture('/videos/feature-5.mp4'))
+            .call(() => setTexture(feature5Video))
             .to('.box5', { opacity: 1, y: 0 })
     }, [setTexture]);
 

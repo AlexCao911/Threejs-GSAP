@@ -1,13 +1,13 @@
 
- // Highlights section                                                                     
- // ~~~~~~~~~~~~~~~~~~                                                                      
- // Masonry-style layout showcasing MacBook Pro key features and benefits.                         
- // Features staggered animations triggered by scroll with responsive design.                                 
- // Displays performance improvements, display quality, AI capabilities, and battery life.            
- // Alex Cou 25/10/16
+// Highlights section                                                                     
+// ~~~~~~~~~~~~~~~~~~                                                                      
+// Masonry-style layout showcasing MacBook Pro key features and benefits.                         
+// Features staggered animations triggered by scroll with responsive design.                                 
+// Displays performance improvements, display quality, AI capabilities, and battery life.            
+// Alex Cou 25/10/16
 
-import {useMediaQuery} from "react-responsive";
-import {useGSAP} from "@gsap/react";
+import { useMediaQuery } from "react-responsive";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import laptopPng from '/laptop.png'
 import sunPng from '/sun.png'
@@ -15,7 +15,7 @@ import aiPng from '/ai.png'
 import batteryPng from '/battery.png'
 
 const Highlights = () => {
-    const isMobile = useMediaQuery({  query: '(max-width: 1024px)' });
+    const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
 
     useGSAP(() => {
         gsap.to(['.left-column', '.right-column'], {
@@ -50,13 +50,13 @@ const Highlights = () => {
                         </p>
                     </div>
                 </div>
-            
 
-            <div className="right-column">
+
+                <div className="right-column">
                     <div className="apple-gradient">
                         <img src={aiPng} alt="AI" />
-                        <p> Built for <br/>
-                            <span> Apple Intelligence. </span> <br/>
+                        <p> Built for <br />
+                            <span> Apple Intelligence. </span> <br />
                         </p>
                     </div>
 

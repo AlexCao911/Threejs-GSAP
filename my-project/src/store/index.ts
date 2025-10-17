@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import feature1Video from '/videos/feature-1.mp4';
 
 // 1. Create interface -> store 
 interface MacbookState {
@@ -19,10 +20,10 @@ const useMacbookStore = create<MacbookState>((set) => ({
     scale: 0.08,
     setScale: (scale: number) => set({ scale }),
 
-    texture: '/videos/feature-1.mp4',
+    texture: feature1Video,
     setTexture: (texture: string) => set({ texture }),
 
-    reset: () => set({ color: '#2e2c2e', scale: 0.08, texture: '/videos/feature-1.mp4' }),
+    reset: () => set({ color: '#2e2c2e', scale: 0.08, texture: feature1Video }),
 }));
 
 export default useMacbookStore;
