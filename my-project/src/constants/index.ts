@@ -1,3 +1,11 @@
+// Breakpoint configuration for responsive design
+export const BREAKPOINTS = {
+  mobile: 767,
+  tablet: 1023,
+  desktop: 1439,
+  wide: Infinity,
+} as const;
+
 const navLinks = [
   { label: "Store" },
   { label: "Mac" },
