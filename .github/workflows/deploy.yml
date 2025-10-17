@@ -29,11 +29,10 @@ jobs:
           cache: "npm"
           cache-dependency-path: my-project/package-lock.json
 
-      - name: Clean install dependencies
+      - name: Install dependencies
         run: |
           cd my-project
-          rm -rf node_modules package-lock.json
-          npm install
+          npm ci
 
       - name: Build
         run: |
