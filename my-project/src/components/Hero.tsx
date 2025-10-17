@@ -6,6 +6,8 @@
 // Alex Cou 25/10/14
 
 import {useEffect, useRef} from "react";
+import titlePng from '/title.png'
+import heroVideo from '/videos/hero.mp4'
 
 const Hero = () => {
     
@@ -21,10 +23,10 @@ const Hero = () => {
         <section id="hero">
             <div>
                 <h1>Macbook Pro</h1>
-                <img src="/title.png" alt="Macbook Title" />
+                <img src={titlePng} alt="Macbook Title" />
             </div>
 
-            <video ref={videoRef} src="/videos/hero.mp4" autoPlay muted playsInline />
+            <video ref={videoRef} src={heroVideo} autoPlay muted playsInline />
 
             <button>Buy</button>
             <p>From $1599 or $133/mo for 12 months</p>

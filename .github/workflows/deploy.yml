@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -25,19 +25,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20.19.0"
-          cache: "npm"
-          cache-dependency-path: my-project/package-lock.json
+          node-version: "20"
 
       - name: Install dependencies
-        run: |
-          cd my-project
-          npm ci
+        working-directory: ./my-project
+        run: npm install
 
       - name: Build
-        run: |
-          cd my-project
-          npm run build
+        working-directory: ./my-project
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
