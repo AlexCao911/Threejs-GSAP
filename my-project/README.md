@@ -54,7 +54,7 @@ A modern, interactive MacBook Pro landing page built with React, TypeScript, Thr
 ## 🏗️ Project Structure
 
 ```
-practise/
+my-project/
 ├── public/
 │   ├── fonts/           # Custom font files
 │   ├── models/          # 3D GLTF models
