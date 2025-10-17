@@ -23,8 +23,7 @@ import * as THREE from 'three';
 
 export function MacbookModel(props: React.ComponentProps<'group'>) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const { nodes, materials, scene } = useGLTF('/models/macbook-transformed.glb') as any
-
+  const { nodes, materials, scene } = useGLTF(`${import.meta.env.BASE_URL}models/macbook-transformed.glb`) as any
   const { color, texture,} = useMacbookStore();
 
 
@@ -74,4 +73,4 @@ export function MacbookModel(props: React.ComponentProps<'group'>) {
   )
 }
 
-useGLTF.preload('/models/macbook-transformed.glb')
+useGLTF.preload(`${import.meta.env.BASE_URL}models/macbook-transformed.glb`)

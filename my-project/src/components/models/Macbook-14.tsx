@@ -23,11 +23,11 @@ import * as THREE from 'three';
 
 export function MacbookModel_14(props: React.ComponentProps<'group'>) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const { nodes, materials, scene } = useGLTF('/models/macbook-14-transformed.glb') as any;
+  const { nodes, materials, scene } = useGLTF(`${import.meta.env.BASE_URL}models/macbook-14-transformed.glb`) as any;
 
   const { color } = useMacbookStore();
 
-  const texture = useTexture('/screen.png');
+  const texture = useTexture(`${import.meta.env.BASE_URL}screen.png`);
   texture.colorSpace = THREE.SRGBColorSpace;
   texture.needsUpdate = true;
 
@@ -77,4 +77,4 @@ export function MacbookModel_14(props: React.ComponentProps<'group'>) {
   )
 }
 
-useGLTF.preload('/models/macbook-14-transformed.glb')
+useGLTF.preload(`${import.meta.env.BASE_URL}models/macbook-14-transformed.glb`)
