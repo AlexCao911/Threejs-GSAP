@@ -158,9 +158,9 @@ This roadmap outlines the planned development phases for the MacBook Pro Landing
 4. **Documentation** - Improve code comments and tutorials
 
 ### Getting Involved
-- Check [Issues](https://github.com/your-username/macbook-landing-page/issues) for current tasks
+- Check [Issues](https://github.com/AlexCao911/Threejs-GSAP/issues) for current tasks
 - Read [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines
-- Join discussions in [GitHub Discussions](https://github.com/your-username/macbook-landing-page/discussions)
+- Join discussions in [GitHub Discussions](https://github.com/AlexCao911/Threejs-GSAP/discussions)
 - Follow the project for updates
 
 ## 📅 Release Schedule

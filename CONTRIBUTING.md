@@ -23,8 +23,8 @@ This project serves as a learning showcase for:
 
 1. **Fork and Clone**
    ```bash
-   git clone https://github.com/your-username/macbook-landing-page.git
-   cd macbook-landing-page
+   git clone https://github.com/AlexCao911/Threejs-GSAP.git
+   cd Threejs-GSAP
    ```
 
 2. **Install Dependencies**

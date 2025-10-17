@@ -26,7 +26,7 @@
 
 ## 🌐 Live Demo
 
-**🔗 [View Live Demo](https://your-username.github.io/macbook-landing-page)**
+**🔗 [View Live Demo](https://alexcao911.github.io/Threejs-GSAP/)**
 
 ## 🎯 Key Features Demonstrated
 
