@@ -286,11 +286,11 @@ const featureSequence = [
 ];
 
 const footerLinks = [
-  { label: "Privacy Policy", link: "#" },
-  { label: "Terms of Use", link: "#" },
-  { label: "Sales Policy", link: "#" },
-  { label: "Legal", link: "#" },
-  { label: "Site Map", link: "#" },
+  { label: "Privacy Policy", link: "privacy_policy" },
+  { label: "Terms of Use", link: "term_of_use" },
+  { label: "Sales Policy", link: "sales_policy" },
+  { label: "Legal", link: "legal" },
+  { label: "Site Map", link: "site_map" },
 ];
 
 export {
